@@ -6,8 +6,7 @@ from .models import Post
 
 class PostTests(TestCase):
 
-    @classmethod
-    def setUp(cls):
+    def setUp(self):
         Post.objects.create(text='just a test')
 
     def test_text_content(self):
